@@ -194,6 +194,9 @@ nav ul li a span:nth-child(4) {
 }
 
 @media only screen and (max-width: 940px){
+    nav {
+        position: fixed;
+    }
     nav ul {
         position: fixed;
         top: 60px;
@@ -236,6 +239,15 @@ nav ul li a span:nth-child(4) {
 
 /* header background code start here  */
 
+.header_section {
+    height: 100vh;
+    background-image: url(image/bg-image2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
 .container {
     width: 100%;
     height: 100vh;
@@ -380,7 +392,7 @@ nav ul li a span:nth-child(4) {
         transform: scale(1.2) translate(-50%) rotate(360deg);
         opacity: 0;
     }
-} 
+}  */
 
 /* ms1_our services code start here  */
 
@@ -542,6 +554,245 @@ nav ul li a span:nth-child(4) {
     text-align:initial;
 }
 
+/* Advice Section start here  */
+
+.fourth_section {
+    background-color: #04191C;
+    padding: 100px 0;
+    color: #fff;
+}
+.advice_parent {
+    display: flex;
+    gap: 50px;
+    margin: 0 200px ;
+}
+
+.advice_img {
+    width: 300px;
+}
+.advice_img img {
+    width: 100%;
+}
+.single_advice p {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 20px 0 ;
+}
+.single_advice h3 {
+    font-size: 25px;
+    border-bottom: 2px solid red;
+    padding-bottom: 20px;
+}
+.single_advice h4 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+.single_advice a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff9df;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    border: 1px #000 solid;
+    display: inline-block;
+    margin:20px 5px 0 0;
+    font-weight: bold;
+
+    transition: .5s;
+}
+.single_advice a:hover {
+    background-color: #ffeb94;
+}
+.single_advice i {
+    text-align: center;
+
+}
+
+/* advice section code end  */   
+
+/* contact section code start  */   
+
+.fifth_section {
+    background-image: linear-gradient(#3fb60f1e , #0c699e33), url(image/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.fifth_section form {
+    background-color: #0b381e;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border: 6px solid #44d397;
+    border-radius: 10px;
+}
+form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: .1em;
+}
+form p {
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+    letter-spacing: .1em;
+}
+.input_form {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 50px 0;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 3px solid #00f7ff;
+    font-size: 19px;
+}
+.input_form::placeholder {
+    color: #00e1ff;
+}
+
+.submit_button {
+    background: none;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px ;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+
+    outline-style: ridge;
+    cursor: pointer;
+    transition: .3s;
+}
+.submit_button:hover {
+    background-color: #177080;
+}
+
+/* contact section code end  */ 
+
+/* MATCH PROGECT CODE START  */
+
+.sixth_section {
+    background: #113a68;
+    padding: 100px 0;
+}
+
+.project_ditails {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    margin: 0 160px;
+    color: #fff;
+}
+
+.single_project h2 {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.box_project {
+    border: 4px solid #26528f;
+    padding: 15px;
+    width: 300px;
+}
+.box_project:nth-child(2) {
+    border: 4px solid #fff;
+}
+.box_project i {
+    font-size: 40px;
+    padding: 0px 20px 10px 20px;
+}
+.box_project h5 {
+    margin: 0 0 10px;
+}
+.box_project p {
+    color: #6d809c;
+    font-size: 14px;
+}
+
+/* take care section start here  */
+
+.seventh_section {
+    padding: 100px 0;
+}
+.care_parent {
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    width: 70%;
+}
+.care_text p{
+    margin: 20px 0;
+}
+.care_text ul li {
+    margin-left: 20px;
+}
+
+.care_img {
+    width: 100%;
+    border: 2px solid #d09eff;
+}
+.care_img img {
+    width: 100%;
+}
+/* take care section end here  */
+
+/* footer section code :start here  */
+
+footer {
+    background-color: #113a68;
+    padding: 100px 0 50px;
+}
+
+.footer_container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer_container div {
+    width: 100%;
+    color: #fff;
+}
+.footer_container h4 {
+    margin-bottom: 20px;
+}
+.footer_container span {
+    color: #ffee00;
+    font-weight: 300;
+}
+.footer_div a {
+    display: block;
+}
+.footer_div:nth-child(2) a {
+    margin: 15px 0;
+}
+.footer_container a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer_icon i {
+    background-color: #419aff;
+    padding: 7px 13px;
+    border-radius: 4px;
+}
+
+.footer_p {
+text-align: center;
+letter-spacing: 1px;
+color: #808088;
+padding-top: 30px;
+}
+/* footer section code :end here  */
+
 /* frist section of main tag midea query start  */
 
 @media only screen and ( max-width: 688px) {
@@ -554,7 +805,7 @@ nav ul li a span:nth-child(4) {
     }
     /* survices code start end  */
     
-    /* smart area code start start  */
+    /* smart area code start  */
     .ms2_container{
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
@@ -569,7 +820,7 @@ nav ul li a span:nth-child(4) {
     }
     /* smart area code start end */
 
-    /* about section code start start  */
+    /* about section code start  */
     .about_parent {
         display: block;
         margin: 0 30px;
@@ -581,6 +832,78 @@ nav ul li a span:nth-child(4) {
         grid-gap: 15px;
     }
     /* about section code start end  */
+
+     /* advice section code start */ 
+    .advice_parent {
+        display: block;
+        margin: 0 20px;
+    }
+    .single_advice h3 {
+        margin-top: 50px;
+    }
+    /* advice section code end  */   
+
+    /* contact section code start  */   
+    .fifth_section form {
+        background-color: #0b381e;
+        width: 90%;
+        padding: 20px 25px;
+    }
+    form p {
+        margin: 10px 0;
+    }
+    .input_form {
+        margin: 20px 0;
+    }
+    /* contact section code end  */  
+
+    /* match project section code start  */ 
+    
+    .project_ditails {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+        margin: 0 20px;
+    }
+    .box_project {
+        padding: 15px;
+        width: 100%;
+    }    
+    /* match project section code end  */ 
+
+    /* take care  section code start  */ 
+    .seventh_section {
+        padding: 60px 0;
+    }
+    .care_parent {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .care_text {
+        margin-bottom: 20px;
+    }
+    /* take care section code end  */ 
+
+    /* footer section code start  */ 
+    footer {
+        padding: 50px 0 30px;
+    }
+    .footer_container {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+    .footer_container div {
+        margin-bottom: 30px;
+    }
+    .footer_container h4 {
+        margin-bottom: 5px;
+    }
+    .footer_div:nth-child(2) a {
+        margin: 0;
+    }
+    /* footer section code end  */ 
 }
 
 @media only screen and (min-width: 669px) and ( max-width: 1099px) {
@@ -594,13 +917,13 @@ nav ul li a span:nth-child(4) {
     }    
     /* survices code start end  */
     
-    /* smart area code start start  */
+    /* smart area code start  */
     .ms2_container {
             display: grid;
             grid-template-columns: repeat(1 , 1fr);
             width: 100%;
         }
-        .smart_img {
+    .smart_img {
         width: 100%;
     }
     .smart_text { 
@@ -609,7 +932,7 @@ nav ul li a span:nth-child(4) {
     }
     /* smart area code start end */
     
-    /* about section code start start  */
+    /* about section code start  */
     .about_parent {
         display: block;
         margin: 0 30px;
@@ -620,8 +943,294 @@ nav ul li a span:nth-child(4) {
         grid-template-columns: repeat(2,1fr);
         grid-gap: 15px;
     }
-    /* about section code start end  */
-    
+    /* about section code end  */   
 
+    /* advice section code start */ 
+    .advice_parent {
+        display: block;
+        margin: 0 20px;
+    }
+    .single_advice h3 {
+        margin-top: 50px;
+    }
+      
+    /* advice section code end  */   
+
+    /* contact section code start  */   
+    .fifth_section form {
+        background-color: #0b381e;
+        width: 70%;
+        padding: 40px 50px;
+    }
+    form p {
+        margin: 30px 0;
+    }
+    /* contact section code end  */ 
+
+    /* match project section code start  */ 
+
+    .project_ditails {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 25px;
+        margin: 0 40px;
+    }
+    .box_project {
+        padding: 15px;
+        width: 100%;
+    }    
+    /* match project section code end  */ 
+
+    /* take care  section code start  */ 
+    .seventh_section {
+        padding: 80px 0;
+    }
+    .care_parent {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .care_text {
+        margin-bottom: 20px;
+    }
+    /* take care section code end  */ 
+
+    /* footer section code start  */ 
+    footer {
+        padding: 50px 0 30px;
+    }
+    .footer_container {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+    .footer_container div {
+        margin-bottom: 30px;
+    }
+    .footer_container h4 {
+        margin-bottom: 5px;
+    }
+    .footer_div:nth-child(2) a {
+        margin: 0;
+    }
+    /* footer section code end  */ 
+}
+
+@media only screen and (min-width: 669px) and ( max-width: 1099px) {
+
+    /* survices code start here  */
+    .ms1_container {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }    
+    /* survices code start end  */
     
+    /* smart area code start  */
+    .ms2_container {
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            width: 100%;
+        }
+    .smart_img {
+        width: 100%;
+    }
+    .smart_text { 
+        width: 100%;
+        padding: 0 20px;
+    }
+    /* smart area code start end */
+    
+    /* about section code start  */
+    .about_parent {
+        display: block;
+        margin: 0 30px;
+    }
+
+    .about_box_parent {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 15px;
+    }
+    /* about section code end  */   
+
+    /* advice section code start */ 
+    .advice_parent {
+        display: block;
+        margin: 0 20px;
+    }
+    .single_advice h3 {
+        margin-top: 50px;
+    }
+      
+    /* advice section code end  */   
+
+    /* contact section code start  */   
+    .fifth_section form {
+        background-color: #0b381e;
+        width: 70%;
+        padding: 40px 50px;
+    }
+    form p {
+        margin: 30px 0;
+    }
+    /* contact section code end  */ 
+
+    /* match project section code start  */ 
+
+    .project_ditails {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 25px;
+        margin: 0 40px;
+    }
+    .box_project {
+        padding: 15px;
+        width: 100%;
+    }    
+    /* match project section code end  */ 
+
+    /* take care  section code start  */ 
+    .seventh_section {
+        padding: 80px 0;
+    }
+    .care_parent {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .care_text {
+        margin-bottom: 20px;
+    }
+    /* take care section code end  */ 
+/* footer section code start  */ 
+footer {
+    padding: 50px 0 30px;
+}
+.footer_container {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+.footer_container div {
+    margin-bottom: 30px;
+}
+.footer_container h4 {
+    margin-bottom: 5px;
+}
+.footer_div:nth-child(2) a {
+    margin: 0;
+}
+/* footer section code end  */ 
+}
+
+@media only screen and (min-width: 669px) and ( max-width: 1099px) {
+
+    /* survices code start here  */
+    .ms1_container {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }    
+    /* survices code start end  */
+
+    /* smart area code start  */
+    .ms2_container {
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            width: 100%;
+        }
+    .smart_img {
+        width: 100%;
+    }
+    .smart_text { 
+        width: 100%;
+        padding: 0 20px;
+    }
+    /* smart area code start end */
+
+    /* about section code start  */
+    .about_parent {
+        display: block;
+        margin: 0 30px;
+    }
+
+    .about_box_parent {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 15px;
+    }
+    /* about section code end  */   
+
+    /* advice section code start */ 
+    .advice_parent {
+        display: block;
+        margin: 0 20px;
+    }
+    .single_advice h3 {
+        margin-top: 50px;
+    }
+    
+    /* advice section code end  */   
+
+    /* contact section code start  */   
+    .fifth_section form {
+        background-color: #0b381e;
+        width: 70%;
+        padding: 40px 50px;
+    }
+    form p {
+        margin: 30px 0;
+    }
+    /* contact section code end  */ 
+
+    /* match project section code start  */ 
+
+    .project_ditails {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 25px;
+        margin: 0 40px;
+    }
+    .box_project {
+        padding: 15px;
+        width: 100%;
+    }    
+    /* match project section code end  */ 
+
+    /* take care  section code start  */ 
+    .seventh_section {
+        padding: 80px 0;
+    }
+    .care_parent {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .care_text {
+        margin-bottom: 20px;
+    }
+    /* take care section code end  */ 
+
+        /* footer section code start  */ 
+        footer {
+            padding: 50px 0 30px;
+        }
+        .footer_container {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+        }
+        .footer_container div {
+            margin-bottom: 30px;
+        }
+        .footer_container h4 {
+            margin-bottom: 20px;
+        }
+        .footer_div:nth-child(2) a {
+            margin: 8px;
+        }
+        /* footer section code end  */ 
 }
